@@ -1,0 +1,16 @@
+﻿ciudad,estado,poblacion,lat,lon,elevacion_m
+Ciudad de México,CDMX,12294193,19.42847,-99.12766,2240
+Tijuana,Baja California,1922523,32.5027,-117.00371,97
+Puebla,Puebla,1692181,19.04778,-98.20723,2166
+Guadalajara,Jalisco,1385629,20.67738,-103.34749,1546
+Monterrey,Nuevo León,1135512,25.68435,-100.31721,560
+Cancún,Quintana Roo,888797,21.17429,-86.84656,11
+Hermosillo,Sonora,812229,29.08874,-110.96677,202
+Acapulco,Guerrero,658609,16.84942,-99.90891,16
+Veracruz,Veracruz,428323,19.18095,-96.1429,15
+Mazatlán,Sinaloa,381583,23.22163,-106.41885,1
+La Paz,Baja California Sur,250141,24.14231,-110.31316,33
+Puerto Vallarta,Jalisco,224166,20.617,-105.23018,21
+Cabo San Lucas,Baja California Sur,202694,22.89088,-109.91238,11
+Playa del Carmen,Quintana Roo,149923,20.6274,-87.07987,9
+Santa María Huatulco,Oaxaca,7409,15.83288,-96.32076,230
