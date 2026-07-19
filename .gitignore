@@ -1,4 +1,12 @@
-# Byte-compiled / optimized / DLL files
+# macOS
+.DS_Store
+
+# TEMIS datasets
+data/raw/*.nc
+
+# Python
+__pycache__/
+*.pyc# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
@@ -216,3 +224,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Generated outputs
+outputs/
+

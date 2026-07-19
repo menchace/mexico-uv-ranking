@@ -1,5 +1,5 @@
 """
-Utilities for downloading and opening TEMIS datasets.
+TEMIS utilities for downloading and opening datasets.
 """
 
 from pathlib import Path
@@ -12,10 +12,7 @@ BASE_URL = (
 )
 
 
-def download_year(year: int, folder: str = "data/raw") -> Path:
-    """
-    Download one TEMIS yearly file if it does not exist.
-    """
+def download_year(year, folder="data/raw"):
 
     folder = Path(folder)
     folder.mkdir(parents=True, exist_ok=True)
@@ -28,6 +25,8 @@ def download_year(year: int, folder: str = "data/raw") -> Path:
 
     url = f"{BASE_URL}/{year}/{filename}"
 
+    print(f"Downloading {filename}...")
+
     with requests.get(url, stream=True, timeout=300) as r:
         r.raise_for_status()
 
@@ -39,15 +38,14 @@ def download_year(year: int, folder: str = "data/raw") -> Path:
     return output
 
 
-def open_dataset(year: int, folder: str = "data/raw"):
-    """
-    Open TEMIS PRODUCT group.
-    """
+def open_dataset(year):
 
-    path = download_year(year, folder)
+    path = download_year(year)
 
-    return xr.open_dataset(
+    ds = xr.open_dataset(
         path,
         group="PRODUCT",
         engine="h5netcdf"
     )
+
+    return ds

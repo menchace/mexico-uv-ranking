@@ -9,3 +9,4 @@ geopandas
 shapely
 tqdm
 scipy
+h5py
